@@ -21,7 +21,7 @@ namespace OnlineTicariOtomasyon.Models.Classes
         [StringLength(250)]
         public string PersonelImages { get; set; }
 
-        public SatisHareket SatisHareket { get; set; }
+        public ICollection<SatisHareket> SatisHarekets { get; set; }
 
         public Department Department { get; set; }
 

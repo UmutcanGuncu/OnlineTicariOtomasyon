@@ -16,7 +16,7 @@ namespace OnlineTicariOtomasyon.Models.Classes
         public string ProductName { get; set; }
         [Column(TypeName = "Varchar")]
         [StringLength(50)]
-        public string ProductMark { get; set; }
+        public string    ProductMark { get; set; }
         public int ProductStock { get; set; }
         public decimal ProductBuyPrice { get; set; }
         public decimal ProductSalePrice { get; set; }
@@ -26,7 +26,7 @@ namespace OnlineTicariOtomasyon.Models.Classes
         public string ProductImages { get; set; }
 
         public Category Category  { get; set; }
-        public SatisHareket SatisHareket { get; set; }
+        public ICollection<SatisHareket> SatisHarekets { get; set; }
 
 
 

@@ -17,9 +17,9 @@ namespace OnlineTicariOtomasyon.Models.Classes
         public int Piece { get; set; }
         public decimal Total { get; set; } //Fiyat
         public decimal TotalPrice { get; set; } //Toplam Tutar
-        public ICollection<Product> Uruns { get; set; }
-        public ICollection<Cari> Carilers { get; set; }
-        public ICollection<Personel> Personels { get; set; }
+        public Product Urun { get; set; }
+        public Cari Cariler { get; set; }
+        public Personel Personel { get; set; }
         
 
 
